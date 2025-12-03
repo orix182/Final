@@ -3,7 +3,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   color: #202022;
-  line-height: 1.6;
+  line-height: 2.0;
 }
 
 img {
@@ -34,9 +34,11 @@ img {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
+  .logo-image {
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+}
 }
 
 .logo-mark {
@@ -295,4 +297,10 @@ h2 {
   .hero {
     grid-template-columns: minmax(0, 1fr);
   }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
